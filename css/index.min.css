@@ -179,12 +179,18 @@
   .topic_goods .more {
     float: right;
     color: #999;
+    position: relative;
+
     &::after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); /* 垂直居中 */
+      right: 0; /* 调整为相对于父元素的右侧 */
       display: inline-block;
       content: "";
       margin-left: 13px;
-      width: 7px;
-      height: 13px;
+      width: 6px;
+      height: 11px;
       background-image: url(../images/sprites.png);
       background-position: 0 -110px;
       vertical-align: middle;
@@ -309,6 +315,8 @@
   }
   
   /* // 生鲜 */
+  
+  
   .fresh_produce,
   .clothes_goods,
   .kitchen_goods,
@@ -342,6 +350,7 @@
         }
       }
     }
+    
   
     .bd {
       display: flex;
@@ -419,8 +428,9 @@
   
         img {
           margin: 8px 0;
-          width: 184px;
-          height: 184px;
+          width: 100%;
+          height: auto;
+         
           /* // 新增：防止图片抖动 */
           display: block; 
           /* // 消除图片底部空隙 */
@@ -550,6 +560,47 @@
   }
   
   /* // 服务 */
+ 
+ .customer, .about {
+    width:192px;
+  }
+  
+ .icon {
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    
+    background-image: url(../images/sprites.png);
+    background-repeat: no-repeat;
+  }
+  
+  .customer-service {
+    background-position: -240px -50px;
+    
+  }
+  
+  .questionnaire-fill {
+    background-position: -340px -50px;
+  }
+  
+  .question-answer-line {
+    background-position: -240px 0px;
+  }
+  
+  .weibo-fill {
+    background-position: -340px 0;
+  }
+  
+ 
+  
+  
+  
+  .service.wrapper ul li a p {
+    font-size: 28px;
+    color: #fff;
+    line-height: 58px;
+  }
+  
   .service {
     padding: 79px 0 79px 58px;
     height: 302px;

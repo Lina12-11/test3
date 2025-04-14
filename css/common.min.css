@@ -161,80 +161,75 @@
 }
   }
   /* // 版权 */
-  .footer {
-    height: 342px;
-    background-color: #333;
-  
-    .wrapper {
-      width: 1393px;
-  
-      .top {
-        padding-top: 59px;
-        padding-left: 135px;
-        height: 175px;
-        border-bottom: 3px solid #434343;
-  
-        li {
-          position: relative;
-          float: left;
-          margin-right: 300px;
-          width: 195px;
-          height: 58px;
-          line-height: 58px;
-  
-          span {
-            margin-left: 77px;
-            font-style: 28px;
-            color: #fff;
-          }
-  
-          
-          &::before {
-            position: absolute;
-            left: 0;
-            top: 0;
-            content: "";
-            width: 58px;
-            height: 58px;
-            vertical-align: middle;
-            background-image: url(../images/sprites.png);
-            background-position: 0 0;
-          }
-         
-  
-          &:nth-child(2) {
-            &::before {
-             
-              background-position: -131px 0;
-            }
-          }
-  
-          &:last-child {
-            margin-right: 0;
-            &::before {
-             
-              background-position: -65px 0;
-            }
-          }
-        }
-      }
-  
-      .bottom {
-        padding-top: 40px;
-        text-align: center;
-        font-size: 14px;
-        color: #999;
-  
-        a {
-          font-size: 14px;
-          color: #999;
-        }
-  
-        p {
-          margin-bottom: 20px;
-        }
-      }
-    }
-  }
+ .footer {
+  height: 342px;
+  background-color: #333;
+}
+
+.footer .wrapper {
+  width: 1393px;
+}
+
+.footer .wrapper .top {
+  padding-top: 59px;
+  padding-left: 135px;
+  height: 175px;
+  border-bottom: 3px solid #434343;
+}
+
+.footer .wrapper .top li {
+  position: relative;
+  float: left;
+  margin-right: 300px;
+  width: 195px;
+  height: 58px;
+  line-height: 58px;
+}
+
+.footer .wrapper .top li span {
+  margin-left: 77px;
+  font-size: 28px; /* 修正了这里 */
+  color: #fff;
+}
+
+.footer .wrapper .top li::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 58px;
+  height: 58px;
+  background-image: url(../images/sprites.png);
+  background-position: 0 0;
+}
+
+.footer .wrapper .top li:nth-child(2)::before {
+  background-position: -131px 0;
+}
+
+.footer .wrapper .top li:last-child {
+  margin-right: 0;
+}
+
+.footer .wrapper .top li:last-child::before {
+  background-position: -65px 0;
+}
+
+.footer .wrapper .bottom {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+.footer .wrapper .bottom a {
+  font-size: 14px;
+  color: #999;
+}
+
+.footer .wrapper .bottom p {
+  margin-bottom: 20px;
+}
+
 
 /*# sourceMappingURL=common.min.css.map */
