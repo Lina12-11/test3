@@ -550,6 +550,31 @@
   }
   
   /* // 服务 */
+  .icon {
+    display: inline-block;
+    width: 58px;
+    height: 48px;
+    
+    background-image: url(../images/sprites.png);
+    background-repeat: no-repeat;
+  }
+  .customer-service {
+    background-position: -240px -60px;
+    
+  }
+  
+  .questionnaire-fill {
+    background-position: -340px -60px;
+  }
+  
+  .question-answer-line {
+    background-position: -240px -5px;
+  }
+  
+  .weibo-fill {
+    background-position: -340px -5px;
+  }
+  
   .service {
     padding: 79px 0 79px 58px;
     height: 302px;
