@@ -316,6 +316,7 @@
     .hd {
       height: 96px;
       line-height: 96px;
+      overflow: hidden;
   
       h2 {
         float: left;
